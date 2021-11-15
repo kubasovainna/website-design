@@ -12,8 +12,7 @@
 
 body {
     margin: 0 auto;
-    max-width: 1260px;
-    padding: 0 15px;
+    max-width: 1262px;
 }
 
 /* Меню. Шапка сайта */
@@ -21,6 +20,7 @@ body {
 .header {
     height: 80px;
     width: 100%;
+    padding: 0 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,14 +43,11 @@ body {
     display: flex;
     height: 100%;
     align-content: center;
-    max-width: 50%;
     justify-content: space-between;
     align-items: center;
 }
 
-.burger {
-    display: none;
-}
+
 
 .menu-wrapper {
     display: flex;
@@ -69,11 +66,6 @@ body {
     line-height: 24px;
     text-align: center;
     color: #1A1B22;
-}
-
-.link:hover {
-    border-bottom: 3px solid;
-    margin-top: 3px;
 }
 
 .icon {
@@ -109,7 +101,6 @@ body {
 .top {
     display: flex;
     flex-direction: column;
-    padding: 40px 0;
     gap: 30px;
 }
 
@@ -117,21 +108,13 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-
     color: rgba(26, 27, 34, 0.5);
 }
 
 .subtitle {
-    width: 45%;
-
     font-family: Roboto Slab;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 46px;
-
     color: #1A1B22;
 }
 
@@ -152,7 +135,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px;
-    padding: 60px 0;
 }
 
 /* Карточка статьи */
@@ -160,9 +142,6 @@ body {
 .card {
     display: flex;
     flex-direction: column;
-    margin: 16px 0;
-    width: 400px;
-    height: 576px;
     border-radius: 16px;
     overflow: hidden;
     position: relative;
@@ -242,9 +221,6 @@ body {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    gap: 16px;
-    padding: 16px 24px;
-
     color: #1A1B22;
 }
 
@@ -303,14 +279,12 @@ body {
 
 /* Footer */
 
-footer {
-    height: 80px;
+.footer {
+    box-sizing: border-box;
+    padding: 0 15px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
     background: #FFFFFF;
     z-index: 100;
 }
@@ -328,11 +302,194 @@ footer {
 .footer--container {
     display: flex;
     flex-direction: row;
-    margin-left: auto;
 }
 
-.footer--social-wrapper{
+.footer--social-wrapper {
     margin-left: 24px;
     display: flex;
     gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        height: 80px;
+    }
+
+    .header--logo {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 30%;
+    }
+
+    .header--container {
+        max-width: 70%;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .link:hover {
+        border-bottom: 3px solid;
+        margin-top: 3px;
+    }
+
+    .top {
+        padding: 40px 15px;
+        gap: 30px;
+    }
+
+    .title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .subtitle {
+        font-size: 40px;
+        line-height: 46px;
+        width: 45%;
+    }
+
+    .keywords {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .hero--content {
+        padding: 60px 10px;
+    }
+
+    .card {
+        margin: 16px 0;
+        width: 400px;
+        height: 576px;
+    }
+
+    .card--content {
+        gap: 16px;
+        padding: 16px 24px;
+    }
+
+    .card--title {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .footer {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: space-between;
+    }
+
+    .footer--container {
+        flex-direction: row;
+        margin-left: auto;
+    }
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 56px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .header--logo {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 50%;
+    }
+
+    .burger {
+        font-size: 18px;
+    }
+
+    .menu-wrapper {
+        display: none;
+    }
+
+    .link--btn {
+        display: none;
+    }
+
+    .top {
+        padding: 8px 15px;
+        gap: 16px;
+    }
+
+    .title {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .subtitle {
+        font-size: 30px;
+        line-height: 34px;
+        width: 100%;
+    }
+
+    .hero--content {
+        padding: 24px 15px;
+    }
+
+    .card {
+        margin: 16px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .remove-item {
+        display: none;
+    }
+
+    .card--content {
+        gap: 10px;
+        padding: 16px 16px;
+    }
+
+    .card--title {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer--container {
+        order: -1;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .link {
+        width: min-content;
+        line-height: 48px;
+        padding-left: 0;
+    }
+
+    .link:hover {
+        color: #bababb;
+    }
+
+    .footer--social-wrapper {
+        position: absolute;
+        right: 0;
+        top: 12px;
+    }
+
+    .copyright {
+        margin-bottom: 22px;
+    }
+
 }
