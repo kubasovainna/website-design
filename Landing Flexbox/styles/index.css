@@ -16,6 +16,8 @@ body {
     padding: 0 15px;
 }
 
+/* Меню. Шапка сайта */
+
 .header {
     height: 80px;
     width: 100%;
@@ -61,8 +63,6 @@ body {
     display: flex;
     align-items: center;
     padding: 0 17px;
-    ;
-
     font-family: Roboto;
     font-weight: 500;
     font-size: 18px;
@@ -73,6 +73,7 @@ body {
 
 .link:hover {
     border-bottom: 3px solid;
+    margin-top: 3px;
 }
 
 .icon {
@@ -102,6 +103,8 @@ body {
 .link--btn:hover {
     box-shadow: 0px 5px 15px #D1D2D6;
 }
+
+/* Контентная часть. Заголовки страницы */
 
 .top {
     display: flex;
@@ -149,6 +152,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 16px;
+    padding: 60px 0;
 }
 
 /* Карточка статьи */
@@ -162,6 +166,7 @@ body {
     border-radius: 16px;
     overflow: hidden;
     position: relative;
+    border: 1px solid #ececec;
 
 }
 
@@ -238,7 +243,7 @@ body {
     flex-direction: column;
     align-content: space-between;
     gap: 16px;
-    padding: 12px 24px;
+    padding: 16px 24px;
 
     color: #1A1B22;
 }
@@ -294,4 +299,40 @@ body {
     text-transform: uppercase;
 
     color: #B6BCBF;
+}
+
+/* Footer */
+
+footer {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    z-index: 100;
+}
+
+.copyright {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #B6BCBF;
+}
+
+.footer--container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.footer--social-wrapper{
+    margin-left: 24px;
+    display: flex;
+    gap: 24px;
 }
