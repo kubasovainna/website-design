@@ -76,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left:17px;
+    margin-left: 17px;
     margin-right: 17px;
     padding: 12px 20px;
     font-family: Roboto;
@@ -311,7 +311,6 @@ body {
 .card {
     margin: 16px 0;
     width: 400px;
-    height: 576px;
 }
 
 /* //////////////////////////////////Desktop//////////////// */
@@ -361,6 +360,10 @@ body {
 
     .hero--content {
         padding: 60px 10px;
+    }
+
+    .card {
+        height: 576px;
     }
 
     .card--content {
@@ -440,7 +443,11 @@ body {
     .card {
         margin: 16px 0;
     }
-
+    .card--top-bar {
+        left: 16px;
+        top: 16px;
+        right: 16px;
+    }
     .remove-item {
         display: none;
     }
