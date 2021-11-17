@@ -134,12 +134,13 @@
 /* Основной контейнер для статей */
 
 .hero--content {
-    /* gap: 16px; */
+
 }
 
 /* Карточка статьи */
 
 .newcard {
+
     display: flex;
     flex-direction: column;
     border-radius: 16px;
@@ -313,7 +314,7 @@
     display: flex;
     gap: 24px;
 }
-
+/* /////////////////////////////////////////////desktop/////////////////// */
 @media screen and (min-width: 768px) {
     .header {
         height: 80px;
@@ -363,9 +364,10 @@
         padding: 60px 10px;
     }
 
-    .card {
-        margin: 16px 0;
-        height: 576px;
+    .newcard {
+        padding-bottom: 16px;
+        margin-top:40px;
+        min-height: 576px;
     }
 
     .card--content {
@@ -440,10 +442,11 @@
         padding: 24px 15px;
     }
 
-    .card {
+    .newcard {
         margin: 16px 0;
         width: 100%;
         height: auto;
+        min-height: 350px;
     }
 
     .remove-item {
