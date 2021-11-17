@@ -4,17 +4,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /* Styles */
-
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-body {
+.container {
+    max-width: 1232px;
     margin: 0 auto;
-    max-width: 1262px;
 }
 
+.row {
+    box-sizing: border-box;
+}
 /* Меню. Шапка сайта */
 
 .header {
@@ -131,15 +134,12 @@ body {
 /* Основной контейнер для статей */
 
 .hero--content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
+    /* gap: 16px; */
 }
 
 /* Карточка статьи */
 
-.card {
+.newcard {
     display: flex;
     flex-direction: column;
     border-radius: 16px;
@@ -164,10 +164,12 @@ body {
     right: 24px;
     align-items: stretch;
     height: 40px;
+    box-sizing: border-box;
 }
 
 .card--remove-wrapper {
     display: flex;
+    height: 40px;
 }
 
 .card--type {
@@ -205,9 +207,11 @@ body {
 }
 
 .card--delete-icon {
-    width: 24px;
-    height: 24px;
-    padding: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
     background: #ffffff;
     border-radius: 10px;
 }
@@ -361,7 +365,6 @@ body {
 
     .card {
         margin: 16px 0;
-        width: 400px;
         height: 576px;
     }
 
